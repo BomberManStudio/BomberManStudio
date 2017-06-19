@@ -121,11 +121,16 @@
                </div>
            </section>
            <div class="intro2">
+               <a id="song" class="btn btn-primary" src="Move.mp3" onclick="audio.play('Move.mp3')"></a>
+
            <div class="intro-body">
-               <div class="">
+               <div class="container">
                    <div class="row">
-                       <div class="col-md-6 ">
-                       </div>
+                       <div align="center" class="embed-responsive embed-responsive-16by9">
+                           <video autoplay loop class="embed-responsive-item">
+                               <source src="./bootstrap/img/Indievid.mp4" type="video/mp4">
+                             </video>
+                         </div>
                    </div>
                </div>
            </div>
@@ -136,6 +141,12 @@
                    <p>&copy; Maxime Gallo - Adrien Caramalli - Christophe Carre - Gregory Dasilvasoares - Jacques Ribero - Guillaume Sagot- 2017</p>
                </div>
            </footer>
+           <script>
+           		  function play(){
+           			var audio = document.getElementById("song");
+           			audio.play();
+                    }
+       		</script>
 
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
            <script src="bootstrap/js/bootstrap.js"></script>
